@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         multiply=(Button)findViewById(R.id.button_multiply);
         division=(Button)findViewById(R.id.button_division);
         result=(TextView)findViewById(R.id.textView);
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
         subtract.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 r=Integer.parseInt(num1.getText().toString());
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
         multiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 result.setText("Results="+g);
             }
         });
+
         division.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
